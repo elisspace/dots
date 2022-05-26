@@ -1,0 +1,695 @@
+: 1652972605:0;exit
+: 1652972629:0;vim git/dotfiles/readme.md
+: 1652972826:0;sudo dnf install powerline powerline-fonts
+: 1652972841:0;exit
+: 1652972906:0;cd git/dotfiles
+: 1652972911:0;git add readme.md
+: 1652972933:0;git commit -m "update fedora zsh setup"
+: 1652972935:0;git push
+: 1652972992:0;\
+    sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions\
+
+: 1652973013:0;sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+: 1652973016:0;exit
+: 1652973024:0;cd git/dotfiles
+: 1652973982:0;vim ~/.zshrc
+: 1652974124:0;exit
+: 1652974132:0;echo cat
+: 1652974327:0;cd git/dotfiles
+: 1652974363:0;sudo dnf install burpsuite
+: 1652974373:0;sudo dnf info burpsuite
+: 1652975098:0;mv ~/Downloads/burpsuite_community_linux_v2022_3_7.sh ~/Applications
+: 1652975102:0;cd ~/Applications
+: 1652975103:0;ls
+: 1652975107:0;chmod +x burpsuite_community_linux_v2022_3_7.sh
+: 1652975110:0;./burpsuite_community_linux_v2022_3_7.sh
+: 1652976387:0;dnf info keepassxc
+: 1652976399:0;sudo dnf install keepassxc
+: 1652976501:0;mv ~/Downloads/keepass-21-mar.kdbx ~
+: 1652978310:0;sudo grubby --update-kernel=ALL --args=mem_sleep_default=deep
+: 1652978314:0;exit
+: 1652978401:0;cd git
+: 1652978404:0;cd dotfiles
+: 1652978405:0;ls
+: 1652997364:0;mv ~/Downloads/bootcampspot.ELI_GAULTNEY_Resume.docx.pdf ~/Documents
+: 1652998448:0;mv ~/Downloads/Eli_Gaultney_Dice_Cover_Letter.docx.pdf ~/Documents
+: 1653000695:0;echo $XDG_SESSION_TYPE
+: 1653000771:0;curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+: 1653001124:0;exit
+: 1653001292:0;sudo dnf install @development-tools gcc-c++ wl-clipboard libxkbcommon-devel dbus-devel wxGTK3-devel
+: 1653005354:0;cargo install --force cargo-make --version 0.34.0
+: 1653005695:0;cd git
+: 1653005709:0;git clone https://github.com/federico-terzi/espanso
+: 1653005778:0;cd espanso
+: 1653005779:0;ls
+: 1653005795:0;cargo make --profile release --evn NO_X11=true build-binary
+: 1653005989:0;cargo make --profile release --env NO_X11=true build-binary
+: 1653006244:0;ls
+: 1653006363:0;cd cd espanso
+: 1653006369:0;cd espanso
+: 1653006372:0;ls
+: 1653006387:0;cd ..
+: 1653006388:0;ls
+: 1653006404:0;cd target/release
+: 1653006404:0;ls
+: 1653006456:0;ln -s espanso /usr/local/bin/espanso
+: 1653006463:0;sudo ln -s espanso /usr/local/bin/espanso
+: 1653006478:0;which espanso
+: 1653006493:0;cd /usr/local/
+: 1653006494:0;ls
+: 1653006504:0;cd bin
+: 1653006505:0;ls
+: 1653006512:0;ls -lAh
+: 1653006524:0;rm espanso
+: 1653006528:0;sudo rm espanso
+: 1653006530:0;ls
+: 1653006557:0;mv ~/git/espanso/target/release/espanso .
+: 1653006561:0;sudo mv ~/git/espanso/target/release/espanso .
+: 1653006563:0;ls
+: 1653006625:0;sudo setcap "cap_dac_override+p" $(which espanso)
+: 1653006632:0;espanso --version
+: 1653006640:0;espanso service register
+: 1653006646:0;espanso start
+: 1653006664:0;cd
+: 1653006664:0;ls
+: 1653006673:0;ls -lAh
+: 1653006683:0;cd .config/espanso
+: 1653006684:0;ls
+: 1653006711:0;cp -r ~/git/dotfiles/espanso .
+: 1653006712:0;ls
+: 1653006732:0;cd espanso
+: 1653006732:0;ls
+: 1653006742:0;cd ..
+: 1653006744:0;rm espanso
+: 1653006748:0;rm -r espanso
+: 1653006749:0;ls
+: 1653006750:0;cd ..
+: 1653006758:0;cp -r ~/git/dotfiles/espanso .
+: 1653006760:0;ls
+: 1653006763:0;cd espanso
+: 1653006763:0;ls
+: 1653006767:0;cd config
+: 1653006767:0;ls
+: 1653006771:0;vim default.yml
+: 1653006779:0;cd ..
+: 1653006780:0;ls
+: 1653006782:0;cd match
+: 1653006782:0;ls
+: 1653006786:0;vim base.yml
+: 1653006902:0;~/git/dotfiles
+: 1653006904:0;vim readme.md
+: 1653007199:0;cd
+: 1653007200:0;ls
+: 1653007205:0;ls -lAh
+: 1653007216:0;vim .viminfo
+: 1653007236:0;cd .config
+: 1653007237:0;ls
+: 1653007248:0;find *vimrc
+: 1653007258:0;find / *vimrc
+: 1653007397:0;~/git/dotfiles
+: 1653007398:0;ls
+: 1653007403:0;vim vimrc
+: 1653007433:0;cp vimrc ~/.vimrc
+: 1653007441:0;vim readme.md
+: 1653008330:0;cd
+: 1653008332:0;vim test
+: 1653008355:0;ls
+: 1653008367:0;vim ~/git/dotfiles/vimrc
+: 1653008445:0;exit
+: 1653008462:0;vim ~/git/dotfiles/vimrc
+: 1653008488:0;cd
+: 1653008489:0;ls
+: 1653008493:0;ls -lAh
+: 1653008522:0;cd git/dotfiles
+: 1653008523:0;ls
+: 1653008530:0;git add readme.md
+: 1653008547:0;git commit -m "update fedora vim and espanso instructions"
+: 1653008549:0;git push
+: 1653009466:0;cd ~/Downloads
+: 1653009467:0;ls
+: 1653009470:0;cd FiraCode
+: 1653009471:0;ls
+: 1653009542:0;sudo mkdir /usr/share/fonts/
+: 1653009569:0;cd ..
+: 1653009592:0;sudo mv FiraCode /usr/share/fonts/
+: 1653009594:0;ls
+: 1653009600:0;cd /usr/share/fonts/FiraCode
+: 1653009601:0;ls
+: 1653009610:0;sudo fc-cache -v
+: 1653009704:0;sudo dnf install starship
+: 1653009946:0;vim ~/.zshrc
+: 1653009980:0;vim ~/git/dotfiles/vimrc
+: 1653009993:0;vim ~/git/dotfiles/zshrc
+: 1653010150:0;cd ~/git/dotfiles
+: 1653010152:0;git diff
+: 1653010188:0;git add zshrc
+: 1653010192:0;ls
+: 1653010200:0;git add vimrc
+: 1653010210:0;git commit -m "minor updates"
+: 1653010212:0;git push
+: 1653010217:0;git diff
+: 1653010231:0;exit
+: 1653010237:0;sudo su
+: 1653010710:0;cd ~/git/dotfiles
+: 1653010842:0;cd
+: 1653010849:0;cd .config
+: 1653010851:0;ls
+: 1653010888:0;exit
+: 1653010891:0;whoami
+: 1653010903:0;echo $SHELL
+: 1653011260:0;echo hi
+: 1653048174:0;dnf info zoom
+: 1653048308:0;cd ~/Downloads
+: 1653048338:0;rpm --import package-signing-key.pub
+: 1653048344:0;sudo rpm --import package-signing-key.pub
+: 1653061964:0;sudo dnf install metasploit
+: 1653062072:0;dnf update
+: 1653062077:0;sudo dnf update
+: 1653062699:0;sudo su
+: 1653063363:0;msfconsole
+: 1653076655:0;sudo dnf -y install @development-tools
+: 1653076679:0;sudo dnf -y install kernel-headers kernel-devel dkms elfutils-libelf-devel qt5-qtx11extras
+: 1653076706:0;cat <<EOF | sudo tee /etc/yum.repos.d/virtualbox.repo \
+[virtualbox]\
+name=Fedora $releasever - $basearch - VirtualBox\
+baseurl=http://download.virtualbox.org/virtualbox/rpm/fedora/35/\$basearch\
+enabled=1\
+gpgcheck=1\
+repo_gpgcheck=1\
+gpgkey=https://www.virtualbox.org/download/oracle_vbox.asc\
+EOF
+: 1653076738:0;sudo dnf search virtualbox
+: 1653076763:0;sudo dnf install VirtualBox-6.1
+: 1653076961:0;rm -r /etc/yum.repos.d/virtualbox.repo
+: 1653076969:0;sudo rm -r /etc/yum.repos.d/virtualbox.repo
+: 1653077197:0;sudo /sbin/vboxconfig
+: 1653077925:0;dnf search vagrant
+: 1653077936:0;sudo dnf install vagrant
+: 1653077986:0;cd 
+: 1653077986:0;ls
+: 1653078003:0;rm -rf 'VirtualBox VMs\
+'
+: 1653078005:0;ls
+: 1653078010:0;rm -rf VirtualBox\ VMs
+: 1653078011:0;ls
+: 1653078024:0;mkdir VMs
+: 1653078024:0;ls
+: 1653078027:0;cd VMs
+: 1653078039:0;take metasploitable3-workspace
+: 1653078040:0;ls
+: 1653078051:0;curl -O https://raw.githubusercontent.com/rapid7/metasploitable3/master/Vagrantfile && vagrant up
+: 1653078063:0;ls
+: 1653078067:0;vagrant up
+: 1653078471:0;ls
+: 1653078473:0;cd ..
+: 1653078474:0;ls
+: 1653078477:0;rm -rf metasploitable3-workspace
+: 1653078480:0;ls
+: 1653078481:0;cd ..
+: 1653078486:0;rm -rf VMs
+: 1653078487:0;ls
+: 1653080443:0;msfconsole
+: 1653080545:0;~/git/dotfiles
+: 1653080547:0;vim readme.md
+: 1653080677:0;cd
+: 1653080694:0;nmap 10.0.2.15
+: 1653080705:0;nmap 10.0.2.15/24
+: 1653090417:0;~/Documents
+: 1653090418:0;ls
+: 1653090427:0;mv bootcampspot.ELI_GAULTNEY_Resume.docx.pdf Eli.Gaultney.Resume.pdf
+: 1653090443:0;mv Eli_Gaultney_Dice_Cover_Letter.docx.pdf Eli.Gaultney.Cover.pdf
+: 1653104125:0;../Downloads
+: 1653104126:0;ls
+: 1653104136:0;mv tor-browser-linux64-11.0.11_en-US.tar.xz ~/Applications
+: 1653104141:0;cd ../Applications
+: 1653104142:0;ls
+: 1653104148:0;tar -xf tor-browser-linux64-11.0.11_en-US.tar.xz
+: 1653104154:0;ls
+: 1653104162:0;cd tor-browser_en-US
+: 1653104163:0;ls
+: 1653104168:0;ls -lAh
+: 1653104176:0;./start-tor-browser.desktop
+: 1653143248:0;sudo dnf install sway
+: 1653143278:0;mkdir -p ~/.config/sway
+: 1653143291:0;cp /etc/sway/config ~/.config/sway
+: 1653143297:0;vim ~/.config/sway
+: 1653143307:0;~/.config/sway
+: 1653143307:0;ls
+: 1653143314:0;vim config
+: 1653143422:0;sudo dnf copr enable alebastr/waybar
+: 1653143496:0;sudo dnf install waybar
+: 1653143510:0;dnf info waybar
+: 1653143524:0;exit
+: 1653143711:0;vim ~/.viminfo
+: 1653143795:0;vim ~/.vimrc
+: 1653144245:0;vim test
+: 1653144264:0;vim config
+: 1653144369:0;exit
+: 1653144486:0;vim .config/sway/config
+: 1653144824:0;man 5 sway-input
+: 1653144992:0;swaymsg -t
+: 1653145006:0;swaymsg -t get_inputs | less
+: 1653145779:0;exit
+: 1653145800:0;logout
+: 1653145813:0;firefox
+: 1653149758:0;dnf info steam
+: 1653149773:0;sudo dnf install $3
+: 1653149788:0;echo $3
+: 1653149792:0;echo $_
+: 1653149802:0;echo $1
+: 1653149807:0;echo $2
+: 1653149811:0;echo $0
+: 1653149825:0;echo &1
+: 1653149834:0;sudo dnf install steam
+: 1653157144:0;dnf info filezilla
+: 1653157153:0;sudo dnf install filezilla
+: 1653227224:0;exit
+: 1653227324:0;cd .config/espanso
+: 1653227325:0;ls
+: 1653227327:0;cd match
+: 1653227328:0;ls
+: 1653227337:0;grep linkedin *
+: 1653227350:0;grep linkedin base.yml
+: 1653227356:0;vim base.yml
+: 1653234381:0;python
+: 1653323693:0;dnf info exploit-db
+: 1653323748:0;dnf info exploitdb 
+: 1653323786:0;cd ~/git
+: 1653323818:0;git clone https://github.com/offensive-security/exploitdb.git
+: 1653325211:0;	echo $PATH
+: 1653325250:0;ln -sf exploitdb/searchsploit /usr/local/bin/searchsploit
+: 1653325255:0;sudo ln -sf exploitdb/searchsploit /usr/local/bin/searchsploit
+: 1653325318:0;sudo cp -n exploitdb/.searchsploit_rc ~/
+: 1653325324:0;vim ~/.searchsploit_rc
+: 1653325359:0;searchsploit test
+: 1653325363:0;exit
+: 1653325369:0;searchsploit Tomcat
+: 1653325381:0;searchsploit -u
+: 1653325388:0;which searchsploit
+: 1653325412:0;ls /usr/local/bin | grep search
+: 1653325446:0;cd ~/git
+: 1653325447:0;ls
+: 1653325450:0;cd exploitdb
+: 1653325451:0;ls
+: 1653325457:0;searchsploit test
+: 1653325463:0;./searchsploit test
+: 1653325482:0;git pull
+: 1653325486:0;exit
+: 1653325498:0;cd git/dotfiles
+: 1653325503:0;git pull
+: 1653325522:0;git commit -m "minor updates"
+: 1653325557:0;git add readme.md
+: 1653325560:0;git commit -m "minor updates"
+: 1653325569:0;git pull
+: 1653325596:0;git config pull.rebase false
+: 1653325602:0;git pull
+: 1653325630:0;git push
+: 1653325637:0;vim readme.md
+: 1653325923:0;git add readme.md
+: 1653325938:0;git commit -m "info for searchsploit install"
+: 1653325939:0;git push
+: 1653347325:0;sudo dnf install openvpn
+: 1653347332:0;cd
+: 1653347336:0;Downloads
+: 1653347336:0;ls
+: 1653347352:0;mkdir ~/vpn
+: 1653347360:0;mv mysterylie.ovpn ../vpn
+: 1653347366:0;cd ../vpn
+: 1653347369:0;openvpn mysterylie.ovpn
+: 1653347448:0;sudo openvpn mysterylie.ovpn
+: 1653347512:0;nmap 10.10.4.109
+: 1653347529:0;nmap -sV 10.10.4.109
+: 1653347552:0;cd ../git/exploitdb
+: 1653347554:0;ls
+: 1653347586:0;./searchsploit apache 2.4
+: 1653347647:0;msfconsole
+: 1653347714:0;ls
+: 1653347716:0;cd exploits
+: 1653347717:0;ls
+: 1653347740:0;cd multiple/webapps
+: 1653347741:0;ls
+: 1653347760:0;vim 50383.sh
+: 1653347818:0;ls
+: 1653347835:0;cp 50383.sh ~
+: 1653347836:0;cd
+: 1653347837:0;ls
+: 1653347842:0;mkdir hacking
+: 1653347849:0;mv 50383.sh hacking
+: 1653347855:0;vim target
+: 1653347962:0;mv target hacking
+: 1653347964:0;cd hacking
+: 1653347970:0;chmod +x 50383.sh
+: 1653348005:0;./50383.sh target /bin/sh ls
+: 1653348100:0;ls
+: 1653348119:0;./searchsploit openssh 7.6
+: 1653348306:0;./searchsploit online book store
+: 1653348340:0;cd ..
+: 1653348340:0;ls
+: 1653348342:0;cd ..
+: 1653348345:0;cd php/webapps/47887.py
+: 1653348350:0;cd php/webapps
+: 1653348357:0;vim 47887.py
+: 1653348394:0;cp 47887.py ~/hacking
+: 1653348398:0;ls
+: 1653348404:0;mkdir tryhackme
+: 1653348410:0;mv * tryhackme
+: 1653348413:0;ls
+: 1653348416:0;mv tryhackme
+: 1653348419:0;cd tryhackme
+: 1653348420:0;ls
+: 1653348427:0;python 47887.py
+: 1653348447:0;python 47887.py 10.10.4.109
+: 1653348460:0;python 47887.py http://10.10.4.109
+: 1653348543:0;exit
+: 1653396823:0;cd
+: 1653396827:0;cd ElisSpace
+: 1653396830:0;ls -lAh
+: 1653396836:0;cd .obsidian
+: 1653396837:0;ls
+: 1653396844:0;ls -lAh
+: 1653396859:0;cd ..
+: 1653396865:0;ls -lAh
+: 1653396905:0;mv *sftp* Personal/Hacking/Class/Cyber\ Security\ Bootcamp/gt-virt-cyber-pt-11-2021-u-lol
+: 1653396906:0;ls
+: 1653396926:0;mv 'Capstone Project.gslides' Personal/Hacking/Class/Cyber\ Security\ Bootcamp/gt-virt-cyber-pt-11-2021-u-lol
+: 1653396943:0;mv 2.\ WK\ Course\ Summaries.docx Personal/Hacking/Class/Cyber\ Security\ Bootcamp/gt-virt-cyber-pt-11-2021-u-lol
+: 1653396944:0;ls
+: 1653396959:0;mv ContactList.xlsx Personal/Hacking/Class/Cyber\ Security\ Bootcamp/gt-virt-cyber-pt-11-2021-u-lol
+: 1653396960:0;ls
+: 1653396967:0;ls -lAh
+: 1653396977:0;find . vim
+: 1653397020:0;find . -iname vim
+: 1653397027:0;find --help
+: 1653397067:0;cp ~/.vimrc .obsidian.vimrc
+: 1653397069:0;ls -lAh
+: 1653398646:0;python
+: 1653412885:0;sudo dnf install vnc
+: 1653412899:0;sudo dnf install vlc
+: 1653412908:0;sudo dnf search vlc
+: 1653413004:0;sudo dnf install vlc
+: 1653416646:0;cd
+: 1653416649:0;cd Downloads
+: 1653416650:0;ls
+: 1653416663:0;unzip Async_Cyber_Final.zip
+: 1653416664:0;ls
+: 1653416672:0;cd Cyber_Final
+: 1653416673:0;ls
+: 1653416679:0;vim README.md
+: 1653416689:0;cd Captures
+: 1653416689:0;ls
+: 1653416699:0;sudo dnf install wireshark
+: 1653416743:0;wireshark ftp_image.pcapng
+: 1653416878:0;ls
+: 1653416881:0;file pantheon.jpg
+: 1653416950:0;eog pantheon.jpg
+: 1653417001:0;vim ../README.md
+: 1653417422:0;sudo dnf install pulseaudio-utils
+: 1653417438:0;exit
+: 1653417571:0;cd Downloads/Cyber_Final
+: 1653417572:0;ls
+: 1653417581:0;vim README.md
+: 1653417644:0;wireshark Captures/ftp_image.pcapng
+: 1653418512:0;ls
+: 1653418539:0;eog pantheon2.jpg
+: 1653418679:0;eog file.jpg
+: 1653424131:0;swaymsg -t get_inputs
+: 1653424160:0;swaymsg -t get_outputs
+: 1653424182:0;~/.config/sway
+: 1653424183:0;ls
+: 1653424187:0;vim config
+: 1653424236:0;ls
+: 1653424243:0;~/.config/sway
+: 1653424246:0;swaymsg -t get_outputs
+: 1653424429:0;~/.config/sway
+: 1653424432:0;ls
+: 1653424434:0;vim config
+: 1653424504:0;cd ~/.config/
+: 1653424504:0;ls
+: 1653424514:0;mkdir waybar
+: 1653424517:0;cd waybar
+: 1653424863:0;sudo dnf install otf-font-awesome
+: 1653425012:0;~/Downloads/fontawesome-free-6.1.1-desktop
+: 1653425013:0;ls
+: 1653425015:0;cd otfs
+: 1653425016:0;ls
+: 1653425023:0;gnome-font-viewer *
+: 1653425226:0;exit
+: 1653425486:0;cd /etc/xdg/waybar
+: 1653425487:0;ls
+: 1653425493:0;vim config
+: 1653425499:0;sudo vim config
+: 1653425796:0;cp config config.bak
+: 1653425800:0;sudo cp config config.bak
+: 1653425803:0;vim config
+: 1653425823:0;sudo vim config
+: 1653425875:0;~/.config/sway
+: 1653425877:0;ls
+: 1653425879:0;vim config
+: 1653425964:0;sudo vim config
+: 1653426171:0;vim config
+: 1653426212:0;exit
+: 1653426229:0;man 5 sway 
+: 1653426254:0;vim config
+: 1653426443:0;exit
+: 1653426468:0;vim config
+: 1653426490:0;exit
+: 1653428776:0;cd
+: 1653428838:0;vim config
+: 1653428842:0;ls
+: 1653428848:0;~/.config/sway
+: 1653428853:0;vim config
+: 1653428892:0;eixt
+: 1653428894:0;exit
+: 1653428940:0;ls
+: 1653428943:0;cd vpn
+: 1653428983:0;sudo openvpn mysterylie.ovpn
+: 1653429212:0;cd git/exploitdb
+: 1653429214:0;ls
+: 1653429216:0;git pull
+: 1653429239:0;ls
+: 1653429250:0;./searchsploit fuel cms
+: 1653429270:0;exit
+: 1653429281:0;cd git/exploitdb
+: 1653429283:0;ls
+: 1653429321:0;vim exploits/linux/webapps/47138.py
+: 1653429415:0;cp exploits/linux/webapps/47138.py ~/hacking/tryhackme/fuel_cms.py
+: 1653429423:0;cd ~/hacking/tryhackme
+: 1653429424:0;ls
+: 1653429438:0;ls -lAh
+: 1653429452:0;vim fuel_cms.py
+: 1653429537:0;python fuel_cms.py
+: 1653429547:0;vim fuel_cms.py
+: 1653429584:0;python fuel_cms.py
+: 1653429607:0;vim fuel_cms.py
+: 1653429649:0;vim exploits/php/webapps/50477.py
+: 1653429699:0;cp exploits/php/webapps/50477.py ~/hacking/tryhackme/fuel_cms_2.py
+: 1653429716:0;vim fuel_cms_2.py
+: 1653429725:0;python fuel_cms_2.py
+: 1653429739:0;msfconsole
+: 1653429878:0;python fuel_cms_2.py
+: 1653429886:0;pip install colorama
+: 1653429925:0;python fuel_cms_2.py
+: 1653429942:0;python fuel_cms_2.py -u http://10.10.6.251
+: 1653430029:0;vim fuel_cms_2.py
+: 1653430198:0;python fuel_cms_2.py -u http://10.10.6.251
+: 1653430280:0;vim exploits/php/webapps/49487.rb
+: 1653430324:0;ruby exploits/php/webapps/49487.rb http://10.10.6.251 whoami
+: 1653430770:0;curl -O https://gist.githubusercontent.com/anir0y/8529960c18e212948b0e40ed1fb18d6d/raw/5bf2fb821cbbeae44fed82a256530220c3b62e5c/fuel-cms.py
+: 1653430772:0;ls
+: 1653430792:0;chmod +x fuel-cms.py
+: 1653430793:0;ls
+: 1653430797:0;python fuel-cms.py
+: 1653430820:0;python fuel-cms.py http://10.10.6.251
+: 1653430863:0;python fuel-cms.py 10.10.6.251
+: 1653431031:0;cd
+: 1653431039:0;nc -nlvp 4444
+: 1653431060:0;ip a
+: 1653431130:0;ssh -p 269 eli@mysterylie.xyz
+: 1653431163:0;python fuel-cms.py 10.10.6.251
+: 1653431493:0;exit
+: 1653437705:0;nmcli
+: 1653437803:0;exit
+: 1653438077:0;systemctl suspend
+: 1653444438:0;cd ~/Videos
+: 1653444438:0;ls
+: 1653444493:0;vlc The.Northman.2022.2160p.WEB-DL.DDP5.1.Atmos.HDR.H.265-EVO.mkv
+: 1653477171:0;cd Vie
+: 1653477176:0;cd Videos
+: 1653477180:0;vlc The.Northman.2022.2160p.WEB-DL.DDP5.1.Atmos.HDR.H.265-EVO.mkv
+: 1653482228:0;cd Downloads
+: 1653482233:0;cd ../Videos
+: 1653482233:0;ls
+: 1653482236:0;vlc The.Northman.2022.2160p.WEB-DL.DDP5.1.Atmos.HDR.H.265-EVO.mkv
+: 1653484148:0;ls
+: 1653484150:0;cd Everything.Everywhere.All.At.Once.2022.1080p.WEB-DL.DDP5.1.H.264-EVO
+: 1653484151:0;ls
+: 1653484154:0;vlc Everything.Everywhere.All.At.Once.2022.1080p.WEB-DL.DDP5.1.H.264-EVO.mkv
+: 1653492926:0;cd .config/sway
+: 1653492927:0;ls
+: 1653492929:0;vim config
+: 1653493015:0;cd /etc/xdg/waybar
+: 1653493016:0;ls
+: 1653493028:0;sudo vim config
+: 1653494094:0;ls
+: 1653494098:0;cd Documents
+: 1653494099:0;ls
+: 1653494107:0;xdg-open Tomie\ -\ Complete\ Deluxe\ Edition\ \(2016\)\ \(Digital\)\ \(danke-Empire\).cbz
+: 1653496923:0;cd
+: 1653496958:0;mkdir ~/git/dotfiles/sway
+: 1653496976:0;cp -r /etc/xdg/waybar/* ~/git/dotfiles/sway
+: 1653496987:0;cd ~/git/dotfiles/sway
+: 1653496987:0;ls
+: 1653497003:0;cp ~/.config/sway/* .
+: 1653497004:0;ls
+: 1653497013:0;vim config
+: 1653497024:0;mv config config.sway
+: 1653497035:0;cp -r /etc/xdg/waybar/* ~/git/dotfiles/sway
+: 1653497036:0;ls
+: 1653497069:0;mv config config.waybar
+: 1653497074:0;cd ..
+: 1653497079:0;git add sway/
+: 1653497087:0;git commit -m "add sway"
+: 1653497091:0;git push
+: 1653497183:0;exit
+: 1653497206:0;git push
+: 1653497311:0;cat ~/.ssh/orpheus.pub
+: 1653497627:0;ssh -vT git@github.com
+: 1653497702:0;cp ~/.ssh/orpheus id_rsa
+: 1653497706:0;git push
+: 1653497710:0;cp ~/.ssh/orpheus id_rsa
+: 1653497714:0;ssh -vT git@github.com
+: 1653497815:0;cp ~/.ssh/orpheus id_rsa
+: 1653497825:0;sudo cp ~/.ssh/orpheus id_rsa
+: 1653497832:0;ssh -vT git@github.com
+: 1653497872:0;cd ~/.ssh
+: 1653497874:0;ls
+: 1653497880:0;cp orpheus id_rsa
+: 1653497881:0;ls
+: 1653497886:0;ssh -vT git@github.com
+: 1653497901:0;cd dotfiles
+: 1653497909:0;cd ~/git/dotfiles
+: 1653497912:0;git push
+: 1653498839:0;vim ~/.config/sway/config
+: 1653499068:0;xev
+: 1653499089:0;vim ~/.config/sway/config
+: 1653499192:0;cp ~/.config/sway/config ~/git/dotfiles/sway/config.sway
+: 1653499223:0;git add ~/git/dotfiles/sway/config.sway
+: 1653499230:0;cd ~/git/dotfiles
+: 1653499242:0;git add sway/config.sway
+: 1653499274:0;git commit -m "update hardware keybind actions"
+: 1653499276:0;git push
+: 1653499296:0;vim ~/.config/sway/config
+: 1653499560:0;sudo dnf search brightnessctl
+: 1653499579:0;sudo dnf install brightnessctl
+: 1653499601:0;exit
+: 1653500274:0;msfconsole
+: 1653500612:0;vim ~/.config/sway/config
+: 1653500648:0;$term
+: 1653500651:0;echo $term
+: 1653500655:0;vim ~/.config/sway/config
+: 1653500706:0;exit
+: 1653500716:0;msfconsole
+: 1653500827:0;exit
+: 1653500878:0;cp ~/.config/sway/config ~/git/dotfiles/sway/config.sway
+: 1653500881:0;cd ~/git/dotfiles
+: 1653500884:0;git add sway/config.sway
+: 1653500887:0;git push
+: 1653500915:0;git commit -m "make sure foot opens in color mode"
+: 1653500916:0;git push
+: 1653501203:0;msfconsole
+: 1653501273:0;cd ~/vpn
+: 1653501274:0;ls
+: 1653501277:0;sudo openvpn mysterylie.ovpn
+: 1653501974:0;ip a
+: 1653502023:0;nc -nlvp 4444
+: 1653502168:0;ip a
+: 1653502178:0;ping 10.10.223.81
+: 1653502193:0;sudo openvpn mysterylie.ovpn
+: 1653502201:0;ping 10.10.223.81
+: 1653502869:0;eixt
+: 1653502872:0;exit
+: 1653503006:0;msfconsole
+: 1653503767:0;wc -l Downloads/MetasploitWordlist.txt
+: 1653503780:0;ping 10.10.5.200
+: 1653504265:0;ssh -p 269 eli@mysterylie.xyz
+: 1653504307:0;exit
+: 1653504364:0;ssh -p 269 eli@mysterylie.xyz
+: 1653506280:0;ping 10.10.151.81
+: 1653506339:0;cat /opt/metasploit-framework/embedded/framework/data/wordlists/named_pipes.txt
+: 1653507305:0;ping 10.10.151.81
+: 1653508930:0;ssh murphy@10.10.242.61
+: 1653509736:0;sudo dnf update
+: 1653510504:0;msfconsole
+: 1653510544:0;cd /opt/metasploit-framework
+: 1653510544:0;ls
+: 1653510547:0;cd bin
+: 1653510548:0;ls
+: 1653510552:0;msfconsole
+: 1653510556:0;./msfconsole
+: 1653510814:0;ls
+: 1653510820:0;vim scratch
+: 1653512870:0;exit
+: 1653512927:0;/usr/local/bin
+: 1653512927:0;ls
+: 1653512960:0;ln -s /opt/metasploit-framework/bin/msfconsole msfconsole
+: 1653512964:0;sudo ln -s /opt/metasploit-framework/bin/msfconsole msfconsole
+: 1653512968:0;ls
+: 1653512972:0;msfconsole
+: 1653512983:0;exit
+: 1653512987:0;cd
+: 1653512989:0;msfconsole
+: 1653512997:0;exit
+: 1653515073:0;ls
+: 1653515076:0;cd git
+: 1653515076:0;ls
+: 1653515080:0;cd ..
+: 1653515082:0;cd Applications
+: 1653515083:0;ls
+: 1653515090:0;./Obsidian-0.14.6.AppImage
+: 1653524711:0;xdg-open
+: 1653524727:0;exit
+: 1653524813:0;nautilus
+: 1653526624:0;systemctl suspend
+: 1653577433:0;uname -m
+: 1653577503:0;cd Downloads
+: 1653577504:0;ls
+: 1653577514:0;sudo ./chezmoi-2.17.0-x86_64.rpm
+: 1653577558:0;sudo dnf install ./chezmoi-2.17.0-x86_64.rpm
+: 1653577588:0;chezmoi init
+: 1653577599:0;cd ~/.local/share/chezmoi
+: 1653577600:0;ls
+: 1653577604:0;cd
+: 1653577644:0;chezmoi add ~/.zshrc
+: 1653577653:0;chezmoi edit ~/.zshrc
+: 1653577725:0;chezmoi diff
+: 1653577771:0;chezmoi -v apply
+: 1653577795:0;chezmoi cd
+: 1653577801:0;git add .
+: 1653577816:0;git commit -m "Initial commit"
+: 1653577840:0;exit
+: 1653578906:0;git remote add origin git@github.com:elisspace/dots.git
+: 1653578911:0;git branch -M main
+: 1653578930:0;git push -u origin main
+: 1653578952:0;git pull
+: 1653579070:0;git pull main mian
+: 1653579074:0;git pull main main
+: 1653579088:0;git pull origin/main main
+: 1653579302:0;git pull
+: 1653579328:0;man git-pull
+: 1653579465:0;git pull -ff-only
+: 1653579471:0;git pull --ff-only
+: 1653579489:0;man git branch
+: 1653579498:0;git branch --list
+: 1653579504:0;man git branch
+: 1653579577:0;git pull origin main
+: 1653579608:0;git pull --merge
+: 1653579619:0;git merge
+: 1653579641:0;git push -u origin main
+: 1653579690:0;git pull --rebase
+: 1653579724:0;git pull origin main
+: 1653579773:0;man git push
+: 1653579839:0;git push -u -f origin main
+: 1653579983:0;exit
+: 1653580000:0;ls
+: 1653580004:0;ls -lAh
+: 1653580016:0;chezmoi add .zsh_history
