@@ -2,6 +2,9 @@
 # Original file: default.yml
 
 matches:
+  - trigger: :resume
+    replace: https://drive.proton.me/urls/XBK5XWE9F0#E9NGEVsf8Ogp
+ 
   - trigger: :li
     replace: https://www.linkedin.com/in/eli-gaultney/
   - trigger: :tw
