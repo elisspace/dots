@@ -106,7 +106,7 @@ export EDITOR='vim'
 
 # Add path items the zsh way
 path+=~/go/bin
-
+path+=/opt/metasploit-framework/bin
 # Prompt
 PROMPT="%F{red}┌[%f%F{cyan}%m%f%F{red}]─[%f%F{yellow}%D{%H:%M-%d/%m}%f%F{red}]─[%f%F{magenta}%d%f%F{red}]%f"$'\n'"%F{red}└╼%f%F{green}$USER%f%F{yellow}$%f"
 
