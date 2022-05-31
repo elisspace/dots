@@ -14,6 +14,7 @@ To run:
 
 ## Fedora
 1. (RHEL-based) `sudo dnf upgrade`
+2. Install python3 dev tools so pip works: `sudo dnf install python3-devel`
 
 ### VMs
 1. Look at instructions [here]([200~https://docs.fedoraproject.org/en-US/quick-docs/getting-started-with-virtualization/)
