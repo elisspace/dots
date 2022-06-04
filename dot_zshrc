@@ -118,8 +118,8 @@ PROMPT="%F{red}┌[%f%F{cyan}%m%f%F{red}]─[%f%F{yellow}%D{%H:%M-%d/%m}%f%F{red
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias ls='ls -lAh'
-
+alias ls='ls -lAh --color'
+alias discord='Discord'
 ### Optional version to replace `take` functionality that only oh-my-zsh has
 #mkd() {
 #mkdir -p "$@" && cd "$@"
