@@ -1,0 +1,13 @@
+0000000000000000000000000000000000000000 6d1a355f91a35ce137cbe0bd9f164346d09dc1a7 elisspace <eli@elis.space> 1653577816 -0400	commit (initial): Initial commit
+6d1a355f91a35ce137cbe0bd9f164346d09dc1a7 6d1a355f91a35ce137cbe0bd9f164346d09dc1a7 elisspace <eli@elis.space> 1653578911 -0400	Branch: renamed refs/heads/master to refs/heads/main
+6d1a355f91a35ce137cbe0bd9f164346d09dc1a7 b08009786a66e18d8990e80b9857b8b570d272e5 elisspace <eli@elis.space> 1653580437 -0400	commit: Initial commits
+b08009786a66e18d8990e80b9857b8b570d272e5 54077cfd6edc51d84df9b653b8726623a99d6f8e elisspace <eli@elis.space> 1653580841 -0400	commit: remove zsh history
+54077cfd6edc51d84df9b653b8726623a99d6f8e 625d17558119237dc4e510a7833514a981572647 elisspace <eli@elis.space> 1653581035 -0400	commit: Add readme
+625d17558119237dc4e510a7833514a981572647 d7d753021a6221b64f1258adb88a2f6f9b5d8fdb elisspace <eli@elis.space> 1653584824 -0400	commit: add oh my zsh
+d7d753021a6221b64f1258adb88a2f6f9b5d8fdb fd40a0cd51339be820e799d6f2f77d06eb35e1a9 elisspace <eli@elis.space> 1653923863 -0400	commit: adding plugin support for vim
+fd40a0cd51339be820e799d6f2f77d06eb35e1a9 68e73767e107164349a873ef08c2cf10e13faabf elisspace <eli@elis.space> 1653935061 -0400	commit: add metasploit bin to path
+68e73767e107164349a873ef08c2cf10e13faabf cd43023deb3ced693685a3a707987b42b43dad8d elisspace <eli@elis.space> 1653959836 -0400	commit: add python3-dev tools instructions
+cd43023deb3ced693685a3a707987b42b43dad8d 5f90005bbf3a1c6f163e5d27bf6934fe254d99bc elisspace <eli@elis.space> 1654104631 -0400	commit: add waybar
+5f90005bbf3a1c6f163e5d27bf6934fe254d99bc 35480c70e488033151a0a0d5847f724973f2f4fa elisspace <eli@elis.space> 1654106849 -0400	commit: wtf
+35480c70e488033151a0a0d5847f724973f2f4fa 75557795f3c9a882924ed4bbb8de300111b2d5ee elisspace <eli@elis.space> 1654106959 -0400	commit: updating zsh?
+75557795f3c9a882924ed4bbb8de300111b2d5ee b15ef98755dc2cc54f2cb392804b490a968b9e19 elisspace <eli@elis.space> 1654358028 -0400	commit: add screenshot ability
