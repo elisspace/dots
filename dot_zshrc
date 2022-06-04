@@ -118,9 +118,13 @@ PROMPT="%F{red}┌[%f%F{cyan}%m%f%F{red}]─[%f%F{yellow}%D{%H:%M-%d/%m}%f%F{red
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+<<<<<<< HEAD
 alias ls='ls -lAh --color'
 alias discord='Discord'
 alias obs='cd /home/eli/Applications && ./Obsidian-0.14.6.AppImage'
+=======
+alias ls='ls -lAh'
+>>>>>>> parent of b15ef98 (add screenshot ability)
 
 ### Optional version to replace `take` functionality that only oh-my-zsh has
 #mkd() {
